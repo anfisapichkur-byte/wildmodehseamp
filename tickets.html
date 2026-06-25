@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>БИЛЕТЫ | WILD MODE</title>
+
+<link
+rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<a
+href="index.html"
+class="logo">
+
+<img
+src="logo.png"
+alt="WILD MODE">
+
+</a>
+
+<nav class="navigation">
+
+<ul>
+
+<li>
+
+<a href="index.html#about">
+
+О НАС
+
+</a>
+
+</li>
+
+<li>
+
+<a href="index.html#projects">
+
+ПРОЕКТЫ
+
+</a>
+
+</li>
+
+<li>
+
+<a href="tickets.html">
+
+БИЛЕТЫ
+
+</a>
+
+</li>
+
+<li>
+
+<a href="merch.html">
+
+МЕРЧ
+
+</a>
+
+</li>
+
+<li>
+
+<a href="cart.html">
+
+КОРЗИНА
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<main class="ticket-page">
+
+<div class="container">
+
+<section class="ticket-hero">
+
+<div class="ticket-left">
+
+<h1 class="ticket-title">
+
+TICKETS
+
+</h1>
+
+<p class="ticket-subtitle">
+
+ВЫБЕРИТЕ
+ТИП БИЛЕТА
+НА СОБЫТИЕ
+
+<strong>
+
+ZOO AFTER DARK
+
+</strong>
+
+</p>
+
+<div class="current-event">
+
+<h3>
+
+БЛИЖАЙШЕЕ
+СОБЫТИЕ
+
+</h3>
+
+<h2>
+
+ZOO
+AFTER
+DARK
+
+</h2>
+
+<div class="event-info">
+
+<div>
+
+<span>
+
+ДАТА
+
+</span>
+
+<p>
+
+21.06.2026
+
+</p>
+
+</div>
+
+<div>
+
+<span>
+
+ВРЕМЯ
+
+</span>
+
+<p>
+
+23:00
+
+</p>
+
+</div>
+
+<div>
+
+<span>
+
+ЛОКАЦИЯ
+
+</span>
+
+<p>
+
+ОТКРОЕТСЯ
+ЗА 24 ЧАСА
+ДО НАЧАЛА
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="ticket-right">
+
+<img
+src="giraffe.png"
+alt="Giraffe">
+
+</div>
+
+</section>
+
+<section class="ticket-grid">
+
+<article class="ticket-card">
+
+<h2>
+
+STANDARD
+
+</h2>
+
+<p>
+
+ВХОД
+НА ТЕРРИТОРИЮ
+МЕРОПРИЯТИЯ.
+
+ДОСТУП
+КО ВСЕМ
+ТАНЦПОЛАМ
+И ИНСТАЛЛЯЦИЯМ.
+
+</p>
+
+<div class="ticket-bottom">
+
+<div class="ticket-price">
+
+2500 ₽
+
+</div>
+
+<button
+class="ticket-buy"
+data-name="STANDARD"
+data-price="2500"
+data-image="event-current.jpg">
+
+КУПИТЬ
+
+</button>
+
+</div>
+
+</article>
+
+<article class="ticket-card">
+
+<h2>
+
+FAST
+PASS
+
+</h2>
+
+<p>
+
+ОТДЕЛЬНЫЙ
+ВХОД
+БЕЗ ОЧЕРЕДИ.
+
+ПРИОРИТЕТНЫЙ
+ДОСТУП
+НА ПЛОЩАДКУ.
+
+</p>
+
+<div class="ticket-bottom">
+
+<div class="ticket-price">
+
+4500 ₽
+
+</div>
+
+<button
+class="ticket-buy"
+data-name="FAST PASS"
+data-price="4500"
+data-image="event-current.jpg">
+
+КУПИТЬ
+
+</button>
+
+</div>
+
+</article>
+
+<article class="ticket-card">
+
+<h2>
+
+VIP
+
+</h2>
+
+<p>
+
+ОТДЕЛЬНЫЙ
+ВХОД.
+
+VIP BAR.
+
+BACKSTAGE.
+
+ПОДАРОЧНЫЙ
+МЕРЧ.
+
+</p>
+
+<div class="ticket-bottom">
+
+<div class="ticket-price">
+
+7000 ₽
+
+</div>
+
+<button
+class="ticket-buy"
+data-name="VIP"
+data-price="7000"
+data-image="event-current.jpg">
+
+КУПИТЬ
+
+</button>
+
+</div>
+
+</article>
+
+</section>
+
+<section class="ticket-form">
+
+<div class="ticket-form-left">
+
+<h2>
+
+ВАШИ
+ДАННЫЕ
+
+</h2>
+
+<div class="ticket-fields">
+
+<div class="field">
+
+<label>
+
+ИМЯ
+
+</label>
+
+<input
+type="text"
+id="name"
+placeholder="Введите имя">
+
+</div>
+
+<div class="field">
+
+<label>
+
+ФАМИЛИЯ
+
+</label>
+
+<input
+type="text"
+id="surname"
+placeholder="Введите фамилию">
+
+</div>
+
+<div class="field">
+
+<label>
+
+EMAIL
+
+</label>
+
+<input
+type="email"
+id="email"
+placeholder="example@mail.com">
+
+</div>
+
+<div class="field">
+
+<label>
+
+ТЕЛЕФОН
+
+</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="+7 (999) 999-99-99">
+
+</div>
+
+<div class="field full">
+
+<label>
+
+КОЛИЧЕСТВО
+БИЛЕТОВ
+
+</label>
+
+<div class="ticket-counter">
+
+<button
+type="button"
+id="minus">
+
+−
+
+</button>
+
+<span
+id="count">
+
+1
+
+</span>
+
+<button
+type="button"
+id="plus">
+
++
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="ticket-form-right">
+
+<h2>
+
+ОПЛАТА
+
+</h2>
+
+<div class="payment-buttons">
+
+<button
+type="button"
+class="payment active">
+
+КАРТА
+
+</button>
+
+<button
+type="button"
+class="payment">
+
+СБП
+
+</button>
+
+</div>
+
+<div class="ticket-summary">
+
+<div class="summary-row">
+
+<span>
+
+БИЛЕТ
+
+</span>
+
+<strong
+id="ticketName">
+
+STANDARD
+
+</strong>
+
+</div>
+
+<div class="summary-row">
+
+<span>
+
+КОЛИЧЕСТВО
+
+</span>
+
+<strong
+id="ticketQuantity">
+
+1
+
+</strong>
+
+</div>
+
+<div class="summary-row">
+
+<span>
+
+ИТОГО
+
+</span>
+
+<strong
+id="ticketTotal">
+
+2500 ₽
+
+</strong>
+
+</div>
+
+</div>
+
+<button
+id="buyTicket"
+class="pay-btn">
+
+ОФОРМИТЬ
+ЗАКАЗ
+
+</button>
+
+</div>
+
+</section>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-left">
+
+<a
+href="index.html"
+class="logo">
+
+<img
+src="logo.png"
+alt="WILD MODE">
+
+</a>
+
+<p>
+
+© 2026
+WILD MODE
+
+</p>
+
+<p>
+
+ALL RIGHTS
+RESERVED
+
+</p>
+
+</div>
+
+<div class="footer-center">
+
+<h3>
+
+КОНТАКТЫ
+
+</h3>
+
+<p>
+
+wildmodeofficial@gmail.com
+
+</p>
+
+<p>
+
++7 (966) 696-66-66
+
+</p>
+
+</div>
+
+<div class="footer-right">
+
+<a href="#">
+
+INSTAGRAM
+
+</a>
+
+<a href="#">
+
+TELEGRAM
+
+</a>
+
+<a href="#">
+
+VK
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="tickets.js"></script>
+
+</body>
+
+</html>
